@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hasan.css">
+</head>
+<body>
+    <div class="header">
+        <!-- Header içinde logonun olduğu kısım. -->
+        <div class="headersol">
+            <a href="index.html"> <img src="images1/mylogo.png" alt=""></a>
+        </div>
+
+        <!-- Header içinde menülerin olduğu kısım. -->
+        <div class="headersag"> 
+           <!-- Menü ve açılır menü yapılarını tasarlarken aşağıdaki sitelerden bazı kısımlardan esinlenip kendi yapıma uyarladım.
+           https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_subnav
+           https://www.w3schools.com/howto/howto_css_navbar_icon.asp
+           https://www.w3schools.com/howto/howto_css_subnav.asp -->
+
+           <a href="index.html" style="margin-left: 10px;" target="_blank">Anasayfa</a>
+           <div class="menu">
+                <!-- <button class="menubtn">Hakkında</button> -->
+                <a href="hakkinda.html" class="menubtn" target="_blank">Hakkında</a>
+                <div class="menuicerik">
+                    
+                </div>
+           </div>
+
+           <div class="menu">
+            <!-- <button class="menubtn">İletişim</button> -->
+            <a href="iletisim.html" class="menubtn" target="_blank">İletişim</a>
+            <div class="menuicerik">
+              <!-- <a href="" target="_blank">Bring</a>
+              <a href="" target="_blank">Deliver</a>
+              <a href="" target="_blank">Package</a>
+              <a href="" target="_blank">Express</a> -->
+            </div>
+          </div>
+
+          <div class="menu">
+            <!-- <button class="menubtn">Menu4</button> -->
+            <a href="" class="menubtn" target="_blank">Kişisel</a>
+            <div class="menuicerik">
+              <a href="film.html" target="_blank">Film</a>
+              <a href="dizi.html" target="_blank">Dizi</a>
+              <a href="kitap.html" target="_blank">Kitap</a>
+            </div>
+          </div>
+
+          <div class="sosyalmedya">
+            
+                <a href="https://facebook.com/" target="_blank"><img src="images1/facebook.png"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="images1/twitter.png"></a>
+                <a href="https://youtube.com/" target="_blank"><img src="images1/youtube.png"></a>
+
+          </div>
+              
+        </div>
+    </div>
+
+    <div class="haberdivi">
+        <div class="habergorsel">
+            <img src="images1/hbr1.jpg" alt="">
+        </div>
+
+        <!-- https://www.technopat.net/2020/12/14/rtx-3090in-kalbindeki-ga102-gpu-nasil-gorunuyor/ -->
+        <h1>RTX 3090’ın Kalbindeki GA102 GPU Nasıl Görünüyor?</h1>
+        
+        <p>
+            Daha önce AMD’nin Ryzen 5 5600X işlemcisi parçalanmıştı ve Zen 3 mimarisinin nasıl göründüğüne bakmıştık. Karşımızda yine aynı isim Fritzchens Fritz var, ancak bu kez GA102 GPU masaya yatırıldı. Özetleyecek olursak, NVIDIA’nın RTX 3080 ve RTX 3090 gibi üst sınıf ekran kartları bu GPU silikonunu kullanıyor. Diğer taraftan NVIDIA’nın aynı GPU’yu modele göre yapılandırma imkanı var. Birçok PC kullanıcısı, ekran kartlarının içerisinde bulunan grafik işlemcisinden (GPU) habersiz olabilir. Bu GPU’ları görsek bile üst tarafında bir soğutucu katman bulunuyor. Şimdi GA102’nin nasıl göründüğüne yüksek çözünürlüğe sahip görsellerle bir bakalım. Yüksek çözünürlüklü resimleri elde etmek için GeForce RTX 3090 ekran kartı kullanıldı. Yeni GPU’larda eskide olduğu gibi büyük IHS’ler (Entegre Isı Dağıtıcı) bulunmuyor. Bu sebeple işlemci üzerindeki kısım kolayca kaldırıldı ve detaylar hemen açığa çıktı.
+            Kırpılmamış olan GA102 GPU, her bölümde 12 SM (Streaming Multiprocessors) birimi bulunan 7 grafik işleme kümesinden oluşuyor. Toplamda ortaya çıkan 84 SM içerisinde 10752 CUDA çekirdeği bulunabiliyor. Ayrıca GPU içerisinde 10 MB L1 ve 6 MB L2 önbellek yer alıyor. Öte yandan ROP’lar, TMU’lar, bellek denetleyicileri ve bir NVLink G/Ç hub’ı mevcut. SM adı verilen birim, her biri 32 FP32 Çekirdeği, 16 INT32 Çekirdeği, bir Tensor Çekirdeği, bir çözgü zamanlayıcı (warp scheduler) ve bir iletme ünitesine (dispatch unit) sahip dört işleme bloğuna bölünüyor.
+            Hemen aşağıdan Locuza tarafından detaylandırılan çalışmaya göz atabilirsiniz. Burada grafik işlemcisinin her bir bölümü haritalandırılmış ve ayrı ayrı işaretlenmiş. 
+            aaaDaha önce AMD’nin Ryzen 5 5600X işlemcisi parçalanmıştı ve Zen 3 mimarisinin nasıl göründüğüne bakmıştık. Karşımızda yine aynı isim Fritzchens Fritz var, ancak bu kez GA102 GPU masaya yatırıldı. Özetleyecek olursak, NVIDIA’nın RTX 3080 ve RTX 3090 gibi üst sınıf ekran kartları bu GPU silikonunu kullanıyor. Diğer taraftan NVIDIA’nın aynı GPU’yu modele göre yapılandırma imkanı var. Birçok PC kullanıcısı, ekran kartlarının içerisinde bulunan grafik işlemcisinden (GPU) habersiz olabilir. Bu GPU’ları görsek bile üst tarafında bir soğutucu katman bulunuyor. Şimdi GA102’nin nasıl göründüğüne yüksek çözünürlüğe sahip görsellerle bir bakalım. Yüksek çözünürlüklü resimleri elde etmek için GeForce RTX 3090 ekran kartı kullanıldı. Yeni GPU’larda eskide olduğu gibi büyük IHS’ler (Entegre Isı Dağıtıcı) bulunmuyor. Bu sebeple işlemci üzerindeki kısım kolayca kaldırıldı ve detaylar hemen açığa çıktı.
+            Kırpılmamış olan GA102 GPU, her bölümde 12 SM (Streaming Multiprocessors) birimi bulunan 7 grafik işleme kümesinden oluşuyor. Toplamda ortaya çıkan 84 SM içerisinde 10752 CUDA çekirdeği bulunabiliyor. Ayrıca GPU içerisinde 10 MB L1 ve 6 MB L2 önbellek yer alıyor. Öte yandan ROP’lar, TMU’lar, bellek denetleyicileri ve bir NVLink G/Ç hub’ı mevcut. SM adı verilen birim, her biri 32 FP32 Çekirdeği, 16 INT32 Çekirdeği, bir Tensor Çekirdeği, bir çözgü zamanlayıcı (warp scheduler) ve bir iletme ünitesine (dispatch unit) sahip dört işleme bloğuna bölünüyor.
+            Hemen aşağıdan Locuza tarafından detaylandırılan çalışmaya göz atabilirsiniz. Burada grafik işlemcisinin her bir bölümü haritalandırılmış ve ayrı ayrı işaretlenmiş. 
+        </p>
+    </div>
+
+    <div class="footer">
+        <div class="copyright">
+            © Copyright 2020. Tüm hakları saklıdır.
+        </div>
+
+        <div class="bilgi">
+            Kişisel Bilgiler
+            <ul>
+                <li>Hasan Zahid Özer</li>
+                <li>Kocaeli Üniversitesi</li>
+                <li>Bilişim Sistemleri Müh.</li>
+            </ul> 
+        </div>
+
+        <div class="iletisimadresleri">
+           
+            İletişim Adresleri
+                <ul>
+                    <li>hasanzahidozer@hotmail.com</li>
+                    <li>5051196612</li>
+                    <li>Karamürsel/Kocaeli</li>
+                </ul>
+           
+           
+           
+            
+        </div>
+    </div>
+
+    <!-- yukarı çıkma butonu kısmı
+
+    Aşağıdaki siteden yardım alındı. 
+    https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+    https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="js1.js"></script>
+</body>
+</html>

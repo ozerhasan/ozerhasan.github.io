@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hasan.css">
+</head>
+<body>
+    
+     <!-- Header kısmı. -->
+
+    <div class="header">
+        <!-- Header içinde logonun olduğu kısım. -->
+        <div class="headersol">
+            <a href="index.html"> <img src="images1/mylogo.png" alt=""></a>
+        </div>
+
+        <!-- Header içinde menülerin olduğu kısım. -->
+        <div class="headersag"> 
+           <!-- Menü ve açılır menü yapılarını tasarlarken aşağıdaki sitelerden bazı kısımlardan esinlenip kendi yapıma uyarladım.
+           https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_subnav
+           https://www.w3schools.com/howto/howto_css_navbar_icon.asp
+           https://www.w3schools.com/howto/howto_css_subnav.asp -->
+
+           <a href="index.html" style="margin-left: 10px;" target="_blank">Anasayfa</a>
+           <div class="menu">
+                <!-- <button class="menubtn">Hakkında</button> -->
+                <a href="hakkinda.html" class="menubtn" target="_blank">Hakkında</a>
+                <div class="menuicerik">
+                    
+                </div>
+           </div>
+
+           <div class="menu">
+            <!-- <button class="menubtn">İletişim</button> -->
+            <a href="iletisim.html" class="menubtn" target="_blank">İletişim</a>
+            <div class="menuicerik">
+              <!-- <a href="" target="_blank">Bring</a>
+              <a href="" target="_blank">Deliver</a>
+              <a href="" target="_blank">Package</a>
+              <a href="" target="_blank">Express</a> -->
+            </div>
+          </div>
+
+          <div class="menu">
+            <!-- <button class="menubtn">Menu4</button> -->
+            <a href="" class="menubtn" target="_blank">Kişisel</a>
+            <div class="menuicerik">
+              <a href="film.html" target="_blank">Film</a>
+              <a href="dizi.html" target="_blank">Dizi</a>
+              <a href="kitap.html" target="_blank">Kitap</a>
+            </div>
+          </div>
+
+          <div class="sosyalmedya">
+            
+                <a href="https://facebook.com/" target="_blank"><img src="images1/facebook.png"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="images1/twitter.png"></a>
+                <a href="https://youtube.com/" target="_blank"><img src="images1/youtube.png"></a>
+
+          </div>
+              
+        </div>
+    </div>
+
+
+    <!-- Slider alanının olduğu kısım. -->
+    <!-- bu kısmı tasarlarken aşağıdaki sitelerden yardım aldım
+    https://www.w3schools.com/w3css/w3css_slideshow.asp
+    https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+
+    <div class="slider">
+        <img class="mySlides" src="images1/slider1.jpg">
+        <img class="mySlides" src="images1/slider2.jpg">
+        <img class="mySlides" src="images1/slider3.jpg">
+        <img class="mySlides" src="images1/slider4.jpg">
+        <img class="mySlides" src="images1/slider5.jpg">
+        <img class="mySlides" src="images1/slider6.jpg">
+        
+        <button class="sol" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="sag" onclick="plusDivs(+1)">&#10095;</button>
+    </div>
+
+    <!-- Haberler ve duyuruların olduğu kısım. -->
+
+    <div class="haberduyuru">
+        <!-- Bu kısmı tasarlarken aşağıdaki sitelerden fikir aldım.
+        https://www.w3schools.com/cssref/tryit.asp?filename=trycss_overflow
+        https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings_hr -->
+        <div class="haber">
+        
+            <div class="habericerik">
+                <h1 style="text-align: center;">Haberler</h1>
+                <p style="text-align: center; font-size: 1em; color: rgb(255, 0, 0);">(Haberin tamamını görmek için başlığa tıklayın).</p>
+                
+                <a href="haber1.html" target="_blank">RTX 3090’ın Kalbindeki GA102 GPU Nasıl Görünüyor?</a>
+                <p> Daha önce AMD’nin Ryzen 5 5600X işlemcisi parçalanmıştı ve Zen 3 mimarisinin nasıl göründüğüne bakmıştık.</p>
+                <hr>
+
+                <a href="haber2.html" target="_blank">Reddit, Dubmash alımı ile topluluğunu güçlendirmeyi hedefliyor.</a>
+                <p>Reddit tarafından TikTok rakiplerinden birisi olan Dubsmash satın alınmış durumda.</p>
+                <hr>
+                
+                <a href="haber3.html" target="_blank">İnternet Tarayıcılarını Hedefleyen Kötü Amaçlı Reklam Yazılımları Keşfedildi</a>
+                <p>Microsoft Defender Araştırma Ekibi, kötü niyetli kişilerin reklam geliri yaratması için popüler web tarayıcılarını hedefleyen bazı kötü amaçlı yazılımlar belirledi.</p>
+                <hr>
+
+                <a href="haber4.html" target="_blank">Avrupa Birliği, Yarı İletken Üretimini Desteklemeye Başlıyor</a>
+                <p>Avrupa Birliği, yonga ithalatını azaltmak ve yarı iletken sektörünü güçlendirmek amacıyla büyük bütçeler ayırmayı planlıyor.</p>
+                <hr>
+
+                <a href="haber5.html" target="_blank">Debian 10.7 En Son Yamaları İle Çıktı</a>
+                <p>Debian 10.7 sürümü güvenlik ve sorun odaklı yamalar içeriyor.</p>
+                <hr>
+
+                <br>
+                <br>
+                <br>
+
+            </div>
+
+        </div>
+
+
+        <!-- Duyuru kartlarını tasarlarken asagidaki sitelerden fikir aldım
+        https://www.w3schools.com/w3css/w3css_cards.asp
+        https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_cards_photo
+        https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_cards_depth -->
+
+        <div class="duyuru"> 
+            <div class="duyuruicerik">
+                <h1 style="text-align: center;">Duyurular</h1>
+            </div>
+            <!-- https://www.technopat.net/2020/12/17/computex-2021-etkinligi-haziranda-yuz-yuze-duzenlenecek/ -->
+            <div class="duyurukartlari">
+                <p>Computex 2021 Etkinliği Haziranda Yüz Yüze Düzenlenecek</p>
+            </div>
+
+            <br>
+            <!-- https://www.technopat.net/2020/12/17/rtx-game-on-etkinligi-12-ocakta-yeni-nvidia-kartlar-gelebilir/ -->
+            <div class="duyurukartlari">
+                <p>RTX: Game On Etkinliği 12 Ocakta: Yeni NVIDIA Kartlar Gelebilir</p>
+            </div>
+
+            <br>
+            <!-- https://www.technopat.net/2020/12/08/36-cekirdekli-intel-xeon-sunucu-islemcisi-ortaya-cikti/ -->
+            <div class="duyurukartlari">
+                <p>36 Çekirdekli Intel Xeon Sunucu İşlemcisi Ortaya Çıktı</p>
+            </div>
+            
+            <br>
+            <!-- https://www.technopat.net/2020/11/30/facebook-libra-kripto-para-birimini-yakinda-piyasaya-surebilir/ -->
+            <div class="duyurukartlari">
+                <p>Facebook, Libra Kripto Para Birimini Yakında Piyasaya Sürebilir</p>
+            </div>
+
+            <br>
+            <!-- https://www.technopat.net/2020/09/23/starlink-uydudan-internet-hizmetinde-100-mbps-hizlari-goruldu/ -->
+            <div class="duyurukartlari">
+                <p>Starlink Uydudan İnternet Hizmetinde 100 Mbps Hızları Görüldü</p>
+            </div>
+            
+            <br>
+            <!-- https://www.technopat.net/2020/09/21/microsoft-bethesdayi-satin-aldi/ -->
+            <div class="duyurukartlari">
+                <p>Microsoft, Bethesda’yı Satın Aldı</p>
+            </div>
+            
+            <br>
+            <!-- https://www.technopat.net/2020/10/08/asus-nvidia-dpu-ve-egx-altyapili-gpu-sunucularini-duyurdu/ -->
+            <div class="duyurukartlari">
+                <p>ASUS, NVIDIA DPU ve EGX Altyapılı GPU Sunucularını Duyurdu</p>
+            </div>
+            
+            <br>
+            <!-- https://www.technopat.net/2020/08/10/nintendo-satislari-yuzde-400-artti/ -->
+            <div class="duyurukartlari">
+                <p>Nintendo Satışları Pandemi Döneminde Yüzde 400 Arttı</p>
+            </div>
+            <br>
+            <br>
+            <br>
+
+        </div>
+    </div>
+
+    <!-- footer kısmı.. -->
+
+    <div class="footer">
+        <div class="copyright">
+            © Copyright 2020. Tüm hakları saklıdır.
+        </div>
+
+        <div class="bilgi">
+            Kişisel Bilgiler
+            <ul>
+                <li>Hasan Zahid Özer</li>
+                <li>Kocaeli Üniversitesi</li>
+                <li>Bilişim Sistemleri Müh.</li>
+            </ul> 
+        </div>
+
+        <div class="iletisimadresleri">
+           
+            İletişim Adresleri
+                <ul>
+                    <li>hasanzahidozer@hotmail.com</li>
+                    <li>5051196612</li>
+                    <li>Karamürsel/Kocaeli</li>
+                </ul>
+           
+           
+           
+            
+        </div>
+    </div>
+
+    <!-- yukarı çıkma butonu kısmı
+
+    Aşağıdaki siteden yardım alındı. 
+    https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+    https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="js1.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hasan.css">
+</head>
+<body>
+    <div class="header">
+        <!-- Header içinde logonun olduğu kısım. -->
+        <div class="headersol">
+            <a href="index.html"> <img src="images1/mylogo.png" alt=""></a>
+        </div>
+
+        <!-- Header içinde menülerin olduğu kısım. -->
+        <div class="headersag"> 
+           <!-- Menü ve açılır menü yapılarını tasarlarken aşağıdaki sitelerden bazı kısımlardan esinlenip kendi yapıma uyarladım.
+           https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_subnav
+           https://www.w3schools.com/howto/howto_css_navbar_icon.asp
+           https://www.w3schools.com/howto/howto_css_subnav.asp -->
+
+           <a href="index.html" style="margin-left: 10px;" target="_blank">Anasayfa</a>
+           <div class="menu">
+                <!-- <button class="menubtn">Hakkında</button> -->
+                <a href="hakkinda.html" class="menubtn" target="_blank">Hakkında</a>
+                <div class="menuicerik">
+                    
+                </div>
+           </div>
+
+           <div class="menu">
+            <!-- <button class="menubtn">İletişim</button> -->
+            <a href="iletisim.html" class="menubtn" target="_blank">İletişim</a>
+            <div class="menuicerik">
+              <!-- <a href="" target="_blank">Bring</a>
+              <a href="" target="_blank">Deliver</a>
+              <a href="" target="_blank">Package</a>
+              <a href="" target="_blank">Express</a> -->
+            </div>
+          </div>
+
+          <div class="menu">
+            <!-- <button class="menubtn">Menu4</button> -->
+            <a href="" class="menubtn" target="_blank">Kişisel</a>
+            <div class="menuicerik">
+              <a href="film.html" target="_blank">Film</a>
+              <a href="dizi.html" target="_blank">Dizi</a>
+              <a href="kitap.html" target="_blank">Kitap</a>
+            </div>
+          </div>
+
+          <div class="sosyalmedya">
+            
+                <a href="https://facebook.com/" target="_blank"><img src="images1/facebook.png"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="images1/twitter.png"></a>
+                <a href="https://youtube.com/" target="_blank"><img src="images1/youtube.png"></a>
+
+          </div>
+              
+        </div>
+    </div>
+
+    <div class="haberdivi">
+        <div class="filmgorsel">
+            <img src="images1/film3.jpg" alt="">
+            <hr>
+        </div>
+        
+        <div>
+            <div class="videodiv">
+                <!-- video kismi -->
+                <!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_video -->
+                <h1>Fragman</h1>
+                <video width="400" controls id="Video1">
+                    <source src="videos1/yuzuklerinefendisi.mp4" type="video/mp4">
+                    <source src="videos1/yuzuklerinefendisi.ogg" type="video/ogg">
+                    
+                </video>
+
+                    <!-- Bu siteden yararlandım
+                    https://stackoverflow.com/questions/36731230/how-to-fast-forward-or-rewind-an-html5-video-to-a-certain-time-point -->
+                    <br>
+                  <button id="rew" onclick="geri(5)">Geri</button>
+                  <button onclick="ileri(10)">İleri</button>
+                  
+            </div>
+            
+            
+            <div class="metin">
+                <!-- baslik ve yazilar kismi -->
+                
+                <h1>Yüzüklerin Efendisi Serisi</h1>
+        
+                <p> 
+                    <!-- https://tr.wikipedia.org/wiki/Yüzüklerin_Efendisi:_Yüzük_Kardeşliği -->
+                    <p>
+                        <b>Yüzük Kardeşliği:</b> Peter Jackson'ın yönettiği Yüzüklerin Efendisi üçlemesinin birinci filmidir ve 2001 yılında gösterime girmiştir. J. R. R. Tolkien'in aynı adlı fantezi roman üçlemesinin birinci kitabından uyarlanmış olan film, üçlemenin sırasıyla diğer iki filmi olan İki Kule ve Kralın Dönüşü filmleri ile eş zamanlı olarak, Yeni Zelanda'da çekilmiştir. Birleşik bütçeleri yaklaşık 270 milyon $ olan filmlerin çekimleri 15 ay, çekim sonrası aşamaları da yaklaşık bir yıl sürmüştür. Kitapta çok sevilen Tom Bombadil karakterinin Yüzük Kardeşliği filmine aktarılmayışı Yüzüklerin Efendisi hayranlarını üzmüştür.
+
+                        Yüzüklerin Efendisi: Yüzük Kardeşliği ABD'de 313.364.114 $, uluslararası olarak 556.592.194 $ hasılat ile toplam kazancı 871.368.364 $'a ulaşmıştır. Film ABD'de gösterime girdiği ilk hafta 47.211.490 $ gelir elde etmiştir.
+                    </p>
+
+                    <!-- https://tr.wikipedia.org/wiki/Yüzüklerin_Efendisi:_İki_Kule -->
+                    <p>
+                        <b>İki Kule</b> J. R. R. Tolkien'nin İki Kule adlı kitabından uyarlanmış ve Peter Jackson tarafından yönetilmiş 2002 yılında gösterime giren fantezi filmidir. Filmin olay örgüsünde, Frodo ve Sam'in yüzüğü yok etmek için Mordor'a giderken onun eski sahibi Gollum ile tanışmaları, Aragorn, Legolas, ve Gimli'nin Gandalf'ın dirilişi ile birlikte Rohan'ı savunmaya gitmesi ve Merry ile Pippin'in tutsaklıktan kaçmalarından sonra bir Ent olan Treebeard ile tanışmaları olmak üzere üç hikâye anlatıldı.
+
+                        Film, finansal ve eleştirel açıdan başarılı oldu. Film gişede büyük bir başarı elde ederek 900 milyon doların üzerinde hasılat yaptı ve tüm zamanların en çok kazanan 13'ncü filmi oldu.[2] Filmin uzatılmış özel DVD sürümü 19 Kasım 2003 tarihinde dağıtıldı.
+                    </p>
+
+                    <!-- https://tr.wikipedia.org/wiki/Yüzüklerin_Efendisi:_Kralın_Dönüşü -->
+                    <p>
+                        <b>Kralın Dönüşü</b> Peter Jackson'ın yönetmenliğini yaptığı, J. R. R. Tolkien'in Yüzüklerin Efendisi kitaplarının ikinci ve üçüncü bölümlerinden uyarlanan 2003 yılında gösterime giren fantezi filmidir. Yüzüklerin Efendisi film serisinin Yüzük Kardeşliği ve İki Kule'den sonra üçüncü filmidir.
+
+                        Filmin olay örgüsünde Sauron, Orta Dünya'yı ele geçirmek için son fetihleri başlatmasıyla Büyücü Gandalf ve Rohan Kralı Théoden'in Gondor'a yardıma gitmesi, Aragorn'un Gondor'u savunması ve hayalet orduyu bulmaya gitmesi, Frodo Baggins ve Samwise Gamgee'nin Gollum tarafından ihanete uğraması ve Mordor'a gidip Yüzük'ü yok etmeye çalışmaları anlatıldı.
+
+                        17 Aralık 2003 tarihinde gösterime giren Yüzüklerin Efendisi: Kralın Dönüşü, tüm zamanların en çok gişe hasılatı kazanan filmlerinden biri oldu. Film toplamda 1.119.110.941 Amerikan doları kazandı. Ayrıca on bir dalda Akademi Ödülü'ne aday olan film, aday olduğu bütün kategorileri kazandı ve Ben-Hur (1959) ve Titanik (1997) ile birlikte bunu başaran filmlerden biri oldu. Ayrıca En İyi Film dalında Akademi Ödülü kazanan tek fantezi türündeki film oldu. Filmin sinemalarda gösterilen kurgusuna 52 dakika daha eklenerek hazırlanan Uzatılmış Özel Versiyon 14 Aralık 2004 tarihinde DVD olarak dağıtıldı.
+                    </p>
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="copyright">
+            © Copyright 2020. Tüm hakları saklıdır.
+        </div>
+
+        <div class="bilgi">
+            Kişisel Bilgiler
+            <ul>
+                <li>Hasan Zahid Özer</li>
+                <li>Kocaeli Üniversitesi</li>
+                <li>Bilişim Sistemleri Müh.</li>
+            </ul> 
+        </div>
+
+        <div class="iletisimadresleri">
+           
+            İletişim Adresleri
+                <ul>
+                    <li>hasanzahidozer@hotmail.com</li>
+                    <li>5051196612</li>
+                    <li>Karamürsel/Kocaeli</li>
+                </ul>
+           
+           
+           
+            
+        </div>
+    </div>
+
+    <!-- yukarı çıkma butonu kısmı
+
+    Aşağıdaki siteden yardım alındı. 
+    https://www.w3schools.com/howto/howto_js_scroll_to_top.asp 
+    https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top-->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="js1.js"></script>
+</body>
+</html>

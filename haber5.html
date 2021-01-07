@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hasan.css">
+</head>
+<body>
+    <div class="header">
+        <!-- Header içinde logonun olduğu kısım. -->
+        <div class="headersol">
+            <a href="index.html"> <img src="images1/mylogo.png" alt=""></a>
+        </div>
+
+        <!-- Header içinde menülerin olduğu kısım. -->
+        <div class="headersag"> 
+           <!-- Menü ve açılır menü yapılarını tasarlarken aşağıdaki sitelerden bazı kısımlardan esinlenip kendi yapıma uyarladım.
+           https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_subnav
+           https://www.w3schools.com/howto/howto_css_navbar_icon.asp
+           https://www.w3schools.com/howto/howto_css_subnav.asp -->
+
+           <a href="index.html" style="margin-left: 10px;" target="_blank">Anasayfa</a>
+           <div class="menu">
+                <!-- <button class="menubtn">Hakkında</button> -->
+                <a href="hakkinda.html" class="menubtn" target="_blank">Hakkında</a>
+                <div class="menuicerik">
+                    
+                </div>
+           </div>
+
+           <div class="menu">
+            <!-- <button class="menubtn">İletişim</button> -->
+            <a href="iletisim.html" class="menubtn" target="_blank">İletişim</a>
+            <div class="menuicerik">
+              <!-- <a href="" target="_blank">Bring</a>
+              <a href="" target="_blank">Deliver</a>
+              <a href="" target="_blank">Package</a>
+              <a href="" target="_blank">Express</a> -->
+            </div>
+          </div>
+
+          <div class="menu">
+            <!-- <button class="menubtn">Menu4</button> -->
+            <a href="" class="menubtn" target="_blank">Kişisel</a>
+            <div class="menuicerik">
+              <a href="film.html" target="_blank">Film</a>
+              <a href="dizi.html" target="_blank">Dizi</a>
+              <a href="kitap.html" target="_blank">Kitap</a>
+            </div>
+          </div>
+
+          <div class="sosyalmedya">
+            
+                <a href="https://facebook.com/" target="_blank"><img src="images1/facebook.png"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="images1/twitter.png"></a>
+                <a href="https://youtube.com/" target="_blank"><img src="images1/youtube.png"></a>
+
+          </div>
+              
+        </div>
+    </div>
+
+    <div class="haberdivi">
+        <div class="habergorsel">
+            <img src="images1/hbr5.jpg" alt="">
+        </div>
+
+        <!-- https://www.technopat.net/2020/12/06/debian-10-7-en-son-yamalari-ile-cikti/ -->
+        <h1>Debian 10.7 En Son Yamaları İle Çıktı</h1>
+        
+        <p>
+            Debian 10.7 sürümü güvenlik ve sorun odaklı yamalar içeriyor.
+            The Debian Project tarafından Debian 10.7 sürümünün çıkışı duyuruldu. Bu nokta sürüm güvenlik sorunları için yamalar ve ciddi problemler için ayarlamalar ile birlikte geliyor. Bu arada güncel bir Debian kurulumunuz varsa hali hazırda 10.7 sürümünde olduğunuzu da not olarak düşelim.
+
+            Debian’ı yeniden yüklemeniz gerekmemesine ek olarak, sahip olduğunuz Debian 10 kurulum medyalarından kurtulmanıza da gerek yok. Bu medyalar işletim sistemini kurmak için kullanılabilir ve sonra sadece en son güncellemeleri uygulamanız gerekir. Çevrimdışı bir makinede en son yazılımı isteyenler için yeni Debian 10.7 ISO dosyaları da oldukça kullanışlı. Güncellenen paketlerden bazıları ise; Linux çekirdeği, OpenJDK, Ruby, SQLite, systemd, Tor, Thunderbird, Firefox ESR, MariaDB, WordPress ve Transmission olarak karşımıza çıkıyor.
+
+            Debian 10 ilk olarak Temmuz 2019 tarihinde çıkışını gerçekleştirdi. Bu sürüm 2022 yılına kadar güncellemeleri almaya devam edecek. Daha sonra sürüm 2024’e kadar güncelleme sağlamaya devam edecek olan Uzun Süreli Destek ekibine devredilecek. Bir sonraki sürüm olan Debian 11 sürümünün ise kesin olmamakla birlikte 2021‘de piyasaya çıkması bekleniyor. Geçtiğimiz ay Debian 11’in Alman Bauhaus sanat hareketinden esinlenen ve Juliette Taka tarafından tasarlanan Homeworld adlı kaygan yeni bir tema kullanacağı ortaya çıktı.
+        </p>
+    </div>
+
+    <div class="footer">
+        <div class="copyright">
+            © Copyright 2020. Tüm hakları saklıdır.
+        </div>
+
+        <div class="bilgi">
+            Kişisel Bilgiler
+            <ul>
+                <li>Hasan Zahid Özer</li>
+                <li>Kocaeli Üniversitesi</li>
+                <li>Bilişim Sistemleri Müh.</li>
+            </ul> 
+        </div>
+
+        <div class="iletisimadresleri">
+           
+            İletişim Adresleri
+                <ul>
+                    <li>hasanzahidozer@hotmail.com</li>
+                    <li>5051196612</li>
+                    <li>Karamürsel/Kocaeli</li>
+                </ul>
+           
+           
+           
+            
+        </div>
+    </div>
+
+    <!-- yukarı çıkma butonu kısmı
+
+    Aşağıdaki siteden yardım alındı. 
+    https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+    https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="js1.js"></script>
+</body>
+</html>

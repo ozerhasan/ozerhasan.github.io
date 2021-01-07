@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkında</title>
+    <link rel="stylesheet" href="hasan.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+    
+</head>
+<body>
+
+    <!-- Header kısmı.. -->
+
+    <div class="header">
+        <!-- Header içinde logonun olduğu kısım. -->
+        <div class="headersol">
+            <a href="index.html"> <img src="images1/mylogo.png" alt=""></a>
+        </div>
+
+        <!-- Header içinde menülerin olduğu kısım. -->
+        <div class="headersag"> 
+           <!-- Menü ve açılır menü yapılarını tasarlarken aşağıdaki sitelerden bazı kısımlardan esinlenip kendi yapıma uyarladım.
+           https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_subnav
+           https://www.w3schools.com/howto/howto_css_navbar_icon.asp
+           https://www.w3schools.com/howto/howto_css_subnav.asp -->
+
+           <a href="index.html" style="margin-left: 10px;" target="_blank">Anasayfa</a>
+           <div class="menu">
+                <!-- <button class="menubtn">Hakkında</button> -->
+                <a href="hakkinda.html" class="menubtn" target="_blank">Hakkında</a>
+                <div class="menuicerik">
+                    
+                </div>
+           </div>
+
+           <div class="menu">
+            <!-- <button class="menubtn">İletişim</button> -->
+            <a href="iletisim.html" class="menubtn" target="_blank">İletişim</a>
+            <div class="menuicerik">
+              <!-- <a href="" target="_blank">Bring</a>
+              <a href="" target="_blank">Deliver</a>
+              <a href="" target="_blank">Package</a>
+              <a href="" target="_blank">Express</a> -->
+            </div>
+          </div>
+
+          <div class="menu">
+            <!-- <button class="menubtn">Menu4</button> -->
+            <a href="" class="menubtn" target="_blank">Kişisel</a>
+            <div class="menuicerik">
+              <a href="film.html" target="_blank">Film</a>
+              <a href="dizi.html" target="_blank">Dizi</a>
+              <a href="kitap.html" target="_blank">Kitap</a>
+            </div>
+          </div>
+
+          <div class="sosyalmedya">
+            
+                <a href="https://facebook.com/" target="_blank"><img src="images1/facebook.png"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="images1/twitter.png"></a>
+                <a href="https://youtube.com/" target="_blank"><img src="images1/youtube.png"></a>
+
+          </div>
+              
+        </div>
+    </div>
+
+    <!-- Orta kısım.. -->
+    <!-- input kutularindan birinde bi degisiklik yapildiktan sonra
+    kullaniciya guncelleuyari fonksiyonu kullanilarak mesaj verilir bu olay onchange ozelligiyle saglanir  -->
+    <div class="iletisim">
+
+        <!-- formu duzenleme kisminda onchange ve oninput ozelliklerini kullandim
+        https://www.w3schools.com/tags/ref_eventattributes.asp
+        https://www.w3schools.com/jsref/event_oninput.asp -->
+        <form id="form1">
+
+            <fieldset id="fs1" disabled>
+                <h1 style="text-align: center;">ÖZGEÇMİŞ</h1>
+
+                <label for="cvad">Ad</label>
+                <input type="text" id="cvad" name="cvad" value="Hasan Zahid">
+                
+                <label for="cvsoyad">Soyad</label>
+                <input type="text" id="cvsoyad" name="cvsoyad" value="Özer">
+
+                <hr> <h3>İletişim Bilgileri</h3>
+
+                <label for="cvadres">Adres</label>
+                <input type="text" id="cvadres" name="cvadres" value="Karamürsel/Kocaeli">
+
+                <label for="cvemail"><b>Email</b></label>
+                <input type="email" name="cvemail" id="cvemail" value="hasanzahid18@hotmail.com">
+                
+                <label for="cvtelefon">Telefon</label>
+                <input type="tel" id="cvtelefon" name="cvtelefon" value="5051196612">
+                
+                <hr> <h3>Eğitim Bilgileri</h3>
+                
+                <label for="cvokul">Lisans</label>
+                <input type="text" id="cvokul" name="cvokul" value="Kocaeli Üniversitesi Bilisim Sistemleri Müh. (3. Sinif)">
+
+                <label for="cvokul2">Lise</label>
+                <input type="text" id="cvokul2" name="cvokul2" value="Gölcük Anadolu Lisesi (2014-2018)">
+
+                <hr> <h3>Deneyim</h3>
+                
+                <label for="cvdeneyim"></label>
+                <input type="text" id="cvdeneyim" name="cvdeneyim" value="Staj - Karamürsel Belediyesi - Bilgi Islem">
+
+                <label for="cvdeneyim2"></label>
+                <input type="text" id="cvdeneyim2" name="cvdeneyim2" value="Staj - ISU Genel Müdürlügü - Bilgi Islem">
+
+                <hr> <h3>Yabancı Dil</h3>
+
+                <label for="cvydil"></label>
+                <input type="text" id="cvydil" name="cvydil" value="Ingilizce (Orta)">
+
+                <hr> <h3>Bilgisayar - Programlama - Yazılım</h3>
+                
+                <h4>Programlama Dilleri</h4>
+                
+                <label for="cvpdil"></label> <!-- burayi cdpdil diye yanlis yazmisim en basta. hata cikarsa bundan olabilir.-->
+                <input type="text" id="cvpdil" name="cvpdil" value="C#">
+
+                <label for="cvpdil2"></label>
+                <input type="text" id="cvpdil2" name="cvpdil2" value="Java">
+
+                <hr> <h3>Beceriler</h3>
+                
+                <label for="cvbeceri1"></label>
+                <input type="text" id="cvbeceri1" name="cvbeceri1" value="Android Programlama">
+
+                <label for="cvbeceri2"></label>
+                <input type="text" id="cvbeceri2" name="cvbeceri2" value="Nesnelerin Interneti">
+
+                <hr> <h3>Programlar</h3>
+
+                <label for="cvprogram1"></label>
+                <input type="text" id="cvprogram1" name="cvprogram1" value="Android Studio">
+
+                <label for="cvprogram2"></label>
+                <input type="text" id="cvprogram2" name="cvprogram2" value="Visual Studio">
+
+                <label for="cvprogram3"></label>
+                <input type="text" id="cvprogram3" name="cvprogram3" value="Eclipse">
+
+                <label for="cvprogram4"></label>
+                <input type="text" id="cvprogram4" name="cvprogram4" value="Visual Studio Code">
+
+                <hr> <h3>Kurs ve Sertifikalar</h3>
+
+                <label for="cvkurssertifika"></label>
+                <input type="text" id="cvkurssertifika" name="cvkurssertifika" value="Android Mobil Programlama Egitimi (Elginkan Vakfi -  MEB Sertifika)
+                -Restoran tanitim uygulamasi ve hava durumu uygulamasi gibi projeleri gelistirdik.">
+                
+                <label for="cvkurssertifika2"></label>
+                <input type="text" id="cvkurssertifika2" name="cvkurssertifika2" value="Asp.Net Mvc Web Programlama Egitimi (Elginkan Vakfi -  MEB Sertifika)
+                -Bir sirketin ürünlerinin stoklarini takip edebildigi ve düzenleme, silme, güncelleme, ekleme gibi islemleri yapabildigi proje gelistirdik. ">
+
+                <a href="javascript:demoFromHTML()" class="indirbutton">İndir</a>
+                <!-- <a href="javascript:getir(form1)" class="indirbutton">Güncelle</a>   -->
+                <a href="javascript:guncelle(fs1)" class="indirbutton">Düzenle</a> 
+                <!-- oninput="getir(form1)" -->
+                
+            
+                <!-- <input type="submit" name="submit" id="submit" value="Gönder" />
+                <input type="reset" name="reset" value="Temizle" />   -->
+            </fieldset>
+
+        </form>
+
+
+    </div>
+
+    <!-- Hakkında sayfasındaki CV (özgeçmiş) içeriğini pdf dosyasına kaydetmek için aşağıdaki siteden yardım aldım
+    https://www.npmjs.com/package/jspdf
+    https://stackoverflow.com/questions/16858954/how-to-properly-use-jspdf-library
+    http://raw.githack.com/MrRio/jsPDF/master/docs/ -->
+
+    <script>
+        function demoFromHTML() {
+            
+            var pdf = new jsPDF('p', 'pt', 'letter');
+            
+            // source can be HTML-formatted string, or a reference
+            // to an actual DOM element from which the text will be scraped.
+            // pdf.text("Hello world!", 10, 10);
+            
+            
+            var a=getir(form1);
+            
+            
+            pdf.text(a, 20, 20); // 10, 10 du bu ben degistirmeden once
+            pdf.save("a4.pdf");
+            
+            source = $('#content')[0];
+    
+            specialElementHandlers = {
+                
+                '#bypassme': function (element, renderer) {
+                    
+                    return true
+                }
+            };
+            margins = {
+                top: 80,
+                bottom: 60,
+                left: 40,
+                width: 522
+            };
+            
+            pdf.fromHTML(
+                source, // HTML string or DOM elem ref.
+                margins.left, // x coord
+                margins.top, { // y coord
+                    'width': margins.width, // max width of content on PDF
+                    'elementHandlers': specialElementHandlers
+                },
+    
+                function (dispose) {
+                    
+                    pdf.save('Test.pdf');
+                }, margins
+            );
+        }
+    </script>
+
+    
+    
+    <!-- pdf indirme, eski adıyla Run code butonu buradaydı -->
+    <!-- <a href="javascript:demoFromHTML()" class="indirbutton">İndir</a> -->
+    
+
+
+
+    <!-- Footer kısmı.. -->
+    <div class="footer">
+        <div class="copyright">
+            © Copyright 2020. Tüm hakları saklıdır.
+        </div>
+
+        <div class="bilgi">
+            Kişisel Bilgiler
+            <ul>
+                <li>Hasan Zahid Özer</li>
+                <li>Kocaeli Üniversitesi</li>
+                <li>Bilişim Sistemleri Müh.</li>
+            </ul> 
+        </div>
+
+        <div class="iletisimadresleri">
+           
+            İletişim Adresleri
+                <ul>
+                    <li>hasanzahidozer@hotmail.com</li>
+                    <li>5051196612</li>
+                    <li>Karamürsel/Kocaeli</li>
+                </ul>
+           
+           
+           
+            
+        </div>
+    </div>
+
+    <!-- yukarı çıkma butonu kısmı
+
+    Aşağıdaki siteden yardım alındı. 
+    https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+    https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="js1.js"></script>
+
+
+
+</body>
+</html>

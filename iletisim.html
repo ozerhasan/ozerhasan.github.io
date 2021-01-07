@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="hasan.css">
+</head>
+<body>
+    <!-- Header kısmı.. -->
+    <div class="header">
+        <!-- Header içinde logonun olduğu kısım. -->
+        <div class="headersol">
+            <a href="index.html"> <img src="images1/mylogo.png" alt=""></a>
+        </div>
+
+        <!-- Header içinde menülerin olduğu kısım. -->
+        <div class="headersag"> 
+           <!-- Menü ve açılır menü yapılarını tasarlarken aşağıdaki sitelerden bazı kısımlardan esinlenip kendi yapıma uyarladım.
+           https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_subnav
+           https://www.w3schools.com/howto/howto_css_navbar_icon.asp
+           https://www.w3schools.com/howto/howto_css_subnav.asp -->
+
+           <a href="index.html" style="margin-left: 10px;" target="_blank">Anasayfa</a>
+           <div class="menu">
+                <!-- <button class="menubtn">Hakkında</button> -->
+                <a href="hakkinda.html" class="menubtn" target="_blank">Hakkında</a>
+                <div class="menuicerik">
+                    
+                </div>
+           </div>
+
+           <div class="menu">
+            <!-- <button class="menubtn">İletişim</button> -->
+            <a href="iletisim.html" class="menubtn" target="_blank">İletişim</a>
+            <div class="menuicerik">
+              <!-- <a href="" target="_blank">Bring</a>
+              <a href="" target="_blank">Deliver</a>
+              <a href="" target="_blank">Package</a>
+              <a href="" target="_blank">Express</a> -->
+            </div>
+          </div>
+
+          <div class="menu">
+            <!-- <button class="menubtn">Menu4</button> -->
+            <a href="" class="menubtn" target="_blank">Kişisel</a>
+            <div class="menuicerik">
+              <a href="film.html" target="_blank">Film</a>
+              <a href="dizi.html" target="_blank">Dizi</a>
+              <a href="kitap.html" target="_blank">Kitap</a>
+            </div>
+          </div>
+
+          <div class="sosyalmedya">
+            
+                <a href="https://facebook.com/" target="_blank"><img src="images1/facebook.png"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="images1/twitter.png"></a>
+                <a href="https://youtube.com/" target="_blank"><img src="images1/youtube.png"></a>
+
+          </div>
+              
+        </div>
+    </div>
+
+    <!-- Form kısmı.. -->
+
+    <!-- İletişim formunu tasarlarken aşağıdaki siteden yardım aldım.
+    https://www.w3schools.com/howto/howto_css_contact_form.asp
+    https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_tel
+    https://www.w3docs.com/snippets/html/how-to-create-mailto-forms.html -->
+    <!-- Aşağıdaki siteden yardım aldım
+    https://stackoverflow.com/questions/12626940/mailto-on-submit-button -->
+    <div class="iletisim">
+        <form id="form" onsubmit=mail(this)>
+            <label for="ad">Ad</label>
+            <input type="text" id="ad" name="ad" placeholder="Adınız..">
+
+            <label for="soyad">Soyad</label>
+            <input type="text" id="soyad" name="soyad" placeholder="Soyadınız..">
+
+            <label for="dogumtarihi">Doğum Tarihi</label>
+            <input type="date" id="dogumtarihi" name="dogumtarihi" placeholder="Doğum tarihiniz..">
+
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Email'inizi giriniz." name="email" id="email">  
+
+            <label for="telefon">Telefon</label>
+            <input type="tel" id="telefon" name="telefon"  placeholder="5XX-XXX-XXXX">
+            <br>
+            
+            <label for="konu">Mesaj</label>
+            <textarea id="konu" name="konu" placeholder="Mesajınızı giriniz" style="height:200px"></textarea>
+
+            <input type="submit" name="submit" id="submit" value="Gönder" />
+            <input type="reset" name="reset" value="Temizle" />  
+
+        </form>
+    </div>
+
+    <!-- Footer kısmı.. -->
+
+    <div class="footer">
+        <div class="copyright">
+            © Copyright 2020. Tüm hakları saklıdır.
+        </div>
+
+        <div class="bilgi">
+            Kişisel Bilgiler
+            <ul>
+                <li>Hasan Zahid Özer</li>
+                <li>Kocaeli Üniversitesi</li>
+                <li>Bilişim Sistemleri Müh.</li>
+            </ul> 
+        </div>
+
+        <div class="iletisimadresleri">
+           
+            İletişim Adresleri
+                <ul>
+                    <li>hasanzahidozer@hotmail.com</li>
+                    <li>5051196612</li>
+                    <li>Karamürsel/Kocaeli</li>
+                </ul>
+           
+           
+           
+            
+        </div>
+    </div>
+
+    <!-- yukarı çıkma butonu kısmı
+
+    Aşağıdaki siteden yardım alındı. 
+    https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+    https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="js1.js"></script>
+
+</body>
+</html>
